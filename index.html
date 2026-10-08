@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>محلّل الكلمة: فعل أم حرف أم اسم؟ نكرة أم معرفة؟</title>
+</head>
+<body>
+<header class="topbar"><div><span data-icon="logo"></span><span>محلّل الكلمة</span></div></header>
+<main>
+  <h1>فعل، حرف، أم اسم؟</h1>
+  <p class="sub">اكتب كلمة أو جملة، وسيعرض لك الموقع نوع كل كلمة ويحدد النكرة والمعرفة، مع كل الاحتمالات الممكنة مرتبة من الأرجح إلى الأضعف.</p>
+  <div class="box">
+    <textarea id="inp" placeholder="مثال: ذهبت إلى مدرسةِ الحيّ" aria-label="الكلمة أو الجملة"></textarea>
+    <div class="row">
+      <button class="go" id="go"><span data-icon="search"></span>حلّل</button>
+      <button id="clr"><span data-icon="eraser"></span>مسح</button>
+    </div>
+    <div class="row" id="ex" aria-label="أمثلة"></div>
+    <p class="hint">يمكنك الكتابة بالتشكيل أو بدونه. التنوين يُعدّ علامة قوية على النكرة.</p>
+  </div>
+  <section id="out" aria-live="polite"></section>
+  <div class="legend">
+    <p><span class="tag t-verb"><i data-icon="verb"></i>فعل</span> ماضٍ، مضارع، أمر، أو فعل متصل بضمير.</p>
+    <p><span class="tag t-part"><i data-icon="part"></i>حرف</span> جر، عطف، نصب، جزم، نفي، استفهام، نداء وغيرها.</p>
+    <p><span class="tag t-def"><i data-icon="def"></i>اسم معرفة</span> ضمير، إشارة، موصول، علم، «ال»، مضاف إلى معرفة، منادى.</p>
+    <p><span class="tag t-ind"><i data-icon="ind"></i>اسم نكرة</span> اسم لم تنطبق عليه علامات التعريف.</p>
+    <p class="foot">التحليل قائم على قواعد وقوائم وليس محلّلًا صرفيًا كاملًا؛ تظهر الاحتمالات المتعددة عند الالتباس.</p>
+  </div>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
